@@ -1,7 +1,6 @@
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Countdown from './Countdown';
-import Menu from './Menu'
 import Header from './Header';
 
 

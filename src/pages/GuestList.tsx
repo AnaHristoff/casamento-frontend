@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import Menu from "../components/Menu";
 import Header from "../components/Header";
 
 export default function GuestList() {
