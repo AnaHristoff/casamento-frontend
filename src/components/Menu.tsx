@@ -12,7 +12,7 @@ import * as React from 'react';
       import HomeIcon from '@mui/icons-material/Home';
     
       
-      export default function Menu({ color }) {
+      export default function Menu({ color }:{color:string}) {
         const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
         const sections = [
