@@ -1,6 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import Header from "../components/Header";
 
+interface IMenu {
+  regularMenu: { tipo: string, prato: string }[]
+  veggieMenu: { tipo: string, prato: string }[]
+  kidsMenu: { tipo: string, prato: string }[]
+  desserts: { tipo: string, prato: string }[]
+}
+
 export default function Dishes() {
 
     const menuBoxTitles = [
@@ -9,7 +16,7 @@ export default function Dishes() {
       { title: 'Menu Infantil', mapping:  'kidsMenu'},
       { title: 'Sobremesas', mapping:  'desserts'}
     ]
-    const menus = {
+    const menus: IMenu = {
       regularMenu: [
         {
           tipo: 'Entrada',
@@ -51,6 +58,7 @@ export default function Dishes() {
       desserts: [
         {
           tipo: 'Buffet de sobremesas',
+          prato: ''
         }
       ]
     }
@@ -108,7 +116,7 @@ export default function Dishes() {
                 <Typography color='gray' fontSize='25px' fontWeight='350' fontStyle='italic'>
                   {menuBox.title} 
                 </Typography> 
-                {menus[menuBox.mapping].map((dish) => 
+                {menus[menuBox.mapping as keyof IMenu].map((dish) => 
                   <Box display='flex' flexDirection='column'>
                     <Typography color='gray' fontSize='20px' fontWeight='300'>
                       {dish.tipo}

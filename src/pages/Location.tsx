@@ -1,7 +1,4 @@
 import { Box, ImageList, ImageListItem, Typography } from "@mui/material";
-import Carousel from 'react-material-ui-carousel'
-import Menu from "../components/Menu";
-import { width } from "@mui/system";
 import Header from "../components/Header";
 
 export default function Location() {
@@ -15,91 +12,91 @@ export default function Location() {
     },
     {
       img: '/quinta2.webp',
-      title: '1',
+      title: '2',
       rows: 1,
       cols: 2,
     },
     {
       img: '/quinta3.webp',
-      title: '1',
+      title: '3',
       rows: 2,
       cols: 2,
     },
     {
       img: '/quinta4.webp',
-      title: '1',
+      title: '4',
       rows: 1,
       cols: 2,
     },
     {
       img: '/quinta8.webp',
-      title: '1',
+      title: '5',
       rows: 2,
       cols: 4,
     },
     {
       img: '/quinta6.webp',
-      title: '1',
+      title: '6',
       rows: 2,
       cols: 2,
     },
     {
       img: '/quinta7.webp',
-      title: '1',
+      title: '7',
       rows: 2,
       cols: 2,
     },
     {
       img: '/quinta11.webp',
-      title: '1',
+      title: '8',
       rows: 2,
       cols: 4,
     },
     {
       img: '/quinta5.webp',
-      title: '1',
+      title: '9',
       rows: 2,
       cols: 3,
     },
     {
       img: '/quinta17.webp',
-      title: '1',
+      title: '10',
       rows: 2,
       cols: 1,
     },
     {
       img: '/quinta9.webp',
-      title: '1',
+      title: '11',
       rows: 1.5,
       cols: 4,
     },
     {
       img: '/quinta13.webp',
-      title: '1',
+      title: '12',
       rows: 1.5,
       cols: 2,
     },
     {
       img: '/quinta14.webp',
-      title: '1',
+      title: '13',
       rows: 1.5,
       cols: 2,
     },
     {
       img: '/quinta12.webp',
-      title: '1',
+      title: '14',
       rows: 3,
       cols: 4,
     },
     {
       img: '/quinta15.webp',
-      title: '1',
+      title: '15',
       rows: 2,
       cols: 2,
     },
     {
       img: '/quinta16.webp',
-      title: '1',
+      title: '16',
       rows: 2,
       cols: 2,
     }]
@@ -158,7 +155,7 @@ export default function Location() {
                     rowHeight={121}
                 >
                   {photosQuinta.map((item) => (
-                    <ImageListItem key={item} cols={item.cols || 1} rows={item.rows || 1}>
+                    <ImageListItem key={item.title} cols={item.cols || 1} rows={item.rows || 1}>
                       <img
                          {...srcset(item.img, 121, item.rows, item.cols)}
                          alt={item.title}
@@ -184,7 +181,7 @@ export default function Location() {
                 </Typography>
                 <Box display='flex' justifyContent='center'>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.2955764538806!2d-8.725537123945761!3d41.2806711713136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2443650edff24b%3A0xbea80fa3296ec01a!2sQuinta%20do%20Avesso!5e0!3m2!1spt-PT!2spt!4v1698238467668!5m2!1spt-PT!2spt" 
-                  height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{border:0, marginTop:25, width:500}}></iframe>
+                  height="400" loading="lazy" style={{border:0, marginTop:25, width:500}}></iframe>
                    </Box>
               </Box>
               
