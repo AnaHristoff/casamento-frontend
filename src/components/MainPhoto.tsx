@@ -2,11 +2,12 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Countdown from './Countdown';
 import Menu from './Menu'
+import Header from './Header';
 
 
 
 const photo = {
-  image: './public/maos.jpg',
+  image: 'countdown.jpg',
   imageText: 'main image description'
 };
 
@@ -28,22 +29,11 @@ export default function MainPhoto() {
         backgroundImage: `url(${photo.image})`
       }}
     >
-      <Box display='flex' justifyContent='start' position='absolute' zIndex={1}>
-        <Menu />
-      </Box>
+      <Header />
      
       {<img style={{ display: 'none'}} src={photo.image} />}
-      <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          bottom: 0,
-          right: 0,
-          left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)'
-        }}
-      />
       
+        <Countdown />
           <Box 
             sx={{
               position: 'relative',
@@ -56,7 +46,7 @@ export default function MainPhoto() {
             
           </Box>
         
-      <Countdown />
+      
     </Paper>
   );
 }

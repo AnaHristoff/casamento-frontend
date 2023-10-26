@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 
 const photoFolhas = {
-  image: './public/galhosOutono.png'
+  image: 'folhas-principal.jpg'
 };
 
 const weddingText = 'A única certeza que quero ter é viver intensamente essa incerteza'
@@ -23,7 +23,7 @@ export const HomePage = () => {
       <CssBaseline />
         <MainPhoto />
         <Box>
-          <Typography color='black' gutterBottom fontFamily='Allura'
+          <Typography color='gray' gutterBottom fontFamily='Allura'
             sx={{
               textAlign: 'center',
               width: '100%',
@@ -33,15 +33,15 @@ export const HomePage = () => {
             }}>
               {weddingText}
           </Typography>
-          <Box display='flex' justifyContent='end'>
-          {<img style={{ width:'270px', transform: 'rotate(180deg)', marginTop: 30, filter: 'grayscale(70%)'}} src={photoFolhas.image}/>}
+          <Box display='flex' justifyContent='end' marginRight='40px'>
+          {<img style={{ width:'90px', transform: 'rotate(260deg)', filter: 'grayscale(40%)'}} src={photoFolhas.image}/>}
           </Box>
           <Typography color='gray' gutterBottom fontFamily='Allura'
             sx={{
               textAlign: 'center',
               width: '100%',
-              fontSize: 34,
-              marginTop: 5
+              fontSize: 30,
+              marginTop: 0
             }}>
               {weddingDay}
           </Typography>
@@ -49,13 +49,13 @@ export const HomePage = () => {
             sx={{
               textAlign: 'center',
               width: '100%',
-              fontSize: 34,
+              fontSize: 30,
               marginTop: 0
             }}>
               {weddingPlace}
           </Typography>
-          <Box display='flex' justifyContent='start'>
-          {<img style={{ width:'270px', marginTop: 20, filter: 'grayscale(70%)'}} src={photoFolhas.image}/>}
+          <Box display='flex' justifyContent='start' marginLeft='40px'>
+          {<img style={{ width:'90px', transform: 'rotate(70deg)', filter: 'grayscale(40%)'}} src={photoFolhas.image}/>}
           </Box>
           
         </Box>
