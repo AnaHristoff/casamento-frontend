@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './App.css'
 import { Pages } from './pages/Pages'
 
@@ -6,9 +6,9 @@ function App() {
   
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Pages />
-    </BrowserRouter>
+    </HashRouter>
     
   )
 }
