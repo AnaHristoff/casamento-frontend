@@ -16,8 +16,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite/client", "node"],
-    "suppressImplicitAnyIndexErrors": true
+    "types": ["vite/client"],
   },
   "include": ["src", "main.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
