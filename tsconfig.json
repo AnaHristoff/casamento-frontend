@@ -19,6 +19,6 @@
     "types": ["vite/client", "node"],
     "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["src"],
+  "include": ["src", "main.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
